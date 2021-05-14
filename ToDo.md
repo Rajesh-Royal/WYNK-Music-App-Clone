@@ -7,4 +7,5 @@
     - [x] Setup issue templates.
     - [x] Setup PR template.
 - [ ] Setup Storybook.
+- [ ] Setup husky-hooks to lint stagged changes.
 - [ ] Setup react-router-dom.
