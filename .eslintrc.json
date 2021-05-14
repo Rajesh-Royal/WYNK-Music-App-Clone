@@ -1,0 +1,7 @@
+{
+  "extends": "react-app",
+  "rules": {
+      "semi":"error",
+      "no-console":"error"
+  }
+}
