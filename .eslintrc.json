@@ -2,6 +2,10 @@
   "extends": "react-app",
   "rules": {
     "semi": ["warn", "always"],
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "jsx-a11y/anchor-is-valid": [ "off", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }]
   }
 }
