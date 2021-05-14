@@ -8,4 +8,4 @@
     - [x] Setup PR template.
 - [x] Setup Storybook.
 - [ ] Setup husky-hooks to lint stagged changes.
-- [ ] Setup react-router-dom.
+- [x] Setup react-router-dom.
