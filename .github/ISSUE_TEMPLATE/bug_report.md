@@ -1,9 +1,10 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: "Found a bug in current project"
+title: "Bug fix"
 labels: bug
 assignees: Rajesh-Royal
+projects: WYNK Music-App clone
 ---
 
 **Describe the bug**

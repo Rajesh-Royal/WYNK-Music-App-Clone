@@ -4,6 +4,7 @@ about: Suggest an idea for this project
 title: "A new feature to be added"
 labels: enhancement
 assignees: Rajesh-Royal
+project: WYNK Music-App clone
 ---
 
 **Is your feature request related to a problem? Please describe.**
