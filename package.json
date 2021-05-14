@@ -64,5 +64,8 @@
     "autoprefixer": "9",
     "postcss": "7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0"
   }
 }
