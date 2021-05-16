@@ -10,6 +10,7 @@
 - [x] Setup husky-hooks to lint stagged changes.
 - [x] Setup react-router-dom.
 - [ ] Setup packages-info docs.
+- [ ] Setup tailwind dark mode.
 - [ ] Create Pages.
     - [ ] Home Page.
     - [ ] Single Content Pages
