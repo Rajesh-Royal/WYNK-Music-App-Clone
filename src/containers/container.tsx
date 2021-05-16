@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
 
-interface Props {
+export interface ContainerProps {
     children: ReactNode
 }
 
-const Container = ({children}: Props) => {
+const Container:React.FC<ContainerProps> = ({children}) => {
     return (
         <div className="max-w-7xl mx-auto">{children}</div>
     );
