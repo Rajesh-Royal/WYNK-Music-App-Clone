@@ -1,5 +1,3 @@
-import path from "path"
-
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
