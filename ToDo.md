@@ -10,7 +10,7 @@
 - [x] Setup husky-hooks to lint stagged changes.
 - [x] Setup react-router-dom.
 - [ ] Setup packages-info docs.
-- [ ] Setup tailwind dark mode.
+- [x] Setup tailwind dark mode.
 - [ ] Create Pages.
     - [ ] Home Page.
     - [ ] Single Content Pages
@@ -31,7 +31,7 @@
 
     | Home Page  | Other |
     | ------------- | ------------- |
-    | - [ ] Main Hero Slider  | - [ ] Header |
+    | - [ ] Main Hero Slider  | Header |
     | - [ ] Music list slider| - [ ] Single Music Card |
     | - [ ] SignIn, SignUp | - [ ] Footer  |
     | - [ ] Music Player bottom| - [ ] WYNK Download banner  |
