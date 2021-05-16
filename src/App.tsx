@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Header from "./components/Header/Header";
 
 const App = (props: any) => {
