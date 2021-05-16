@@ -25,7 +25,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --fix",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "build:storybook-tailwind": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind-storybook.css"
   },
   "eslintConfig": {
     "extends": [
@@ -63,11 +64,13 @@
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
     "autoprefixer": "9",
-    "postcss": "7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0"
+    "postcss": "8",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.3.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "resolutions": {
     "babel-loader": "8.1.0"
