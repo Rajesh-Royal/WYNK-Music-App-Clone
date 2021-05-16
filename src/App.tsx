@@ -1,13 +1,12 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Header from "./components/Header/Header";
-import Container from "./containers/Container";
 
-function App() {
+const App = (props: any) => {
   return (
-  <main>
-    <Header />
-  </main>
+    <main>
+      <Header />
+    </main>
   );
-}
+};
 
 export default App;
