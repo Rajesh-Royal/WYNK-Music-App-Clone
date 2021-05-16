@@ -12,8 +12,8 @@ const NavBar = (props: Props) => {
     const buttonRef = useRef() as MutableRefObject<HTMLButtonElement>;
     const mouseEnter = () => buttonRef?.current.click();
     return (
-        <Popover.Group as="nav" className="hidden md:flex space-x-8">
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
+        <Popover.Group as="nav" className="hidden md:flex space-x-8 items-end">
+              <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
                   HOME
                 </a>
                 <Popover className="relative">
@@ -22,7 +22,7 @@ const NavBar = (props: Props) => {
                       <Popover.Button
                         className={classNames(
                           open ? "text-gray-900" : "text-gray-500",
-                          "group rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none dark:hover:text-gray-400 dark:text-gray-300 transition-all duration-300"
+                          "group rounded-md inline-flex items-center text-sm font-medium hover:text-gray-900 focus:outline-none dark:hover:text-gray-400 dark:text-gray-300 transition-all duration-300"
                         )}
                         ref={buttonRef}
                         onMouseEnter={mouseEnter}
@@ -31,7 +31,7 @@ const NavBar = (props: Props) => {
                         <ChevronDownIcon
                           className={classNames(
                             open ? "text-gray-600" : "text-gray-400",
-                            "ml-2 h-5 w-5 group-hover:text-gray-500 dark:text-gray-300"
+                            "ml-2 h-5 w-5 group-hover:text-gray-500 dark:text-gray-300 text-sm"
                           )}
                           aria-hidden="true"
                         />
@@ -81,10 +81,10 @@ const NavBar = (props: Props) => {
                   )}
                 </Popover>
 
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
+                <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
                   PODCASTS
                 </a>
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
+                <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
                   DOWNLOAD APP
                 </a>
               </Popover.Group>
