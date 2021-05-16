@@ -1,41 +1,59 @@
 import {
     BookmarkAltIcon,
     CalendarIcon,
-    ChartBarIcon,
-    CursorClickIcon,
     PhoneIcon,
     PlayIcon,
-    RefreshIcon,
     ShieldCheckIcon,
     SupportIcon,
     ViewGridIcon,
+    CollectionIcon,
+    ReceiptRefundIcon,
+    RssIcon,
+    MusicNoteIcon
   } from "@heroicons/react/outline";
+import { DownloadIcon, ThumbUpIcon } from "@heroicons/react/solid";
 
 export const solutions = [
     {
-      name: "Analytics",
-      description: "Get a better understanding of where your traffic is coming from.",
+      name: "My Playlists",
+      description: "You will find all your playlists here",
       href: "#",
-      icon: ChartBarIcon,
+      icon: CollectionIcon,
     },
     {
-      name: "Engagement",
-      description: "Speak directly to your customers in a more meaningful way.",
+      name: "Liked Songs",
+      description: "List of all the songs which you have liked",
       href: "#",
-      icon: CursorClickIcon,
+      icon: ThumbUpIcon,
     },
-    { name: "Security", description: "Your customers' data will be safe and secure.", href: "#", icon: ShieldCheckIcon },
     {
-      name: "Integrations",
-      description: "Connect with third-party tools that you're already using.",
+      name: "Recently Played Songs",
+      description: "Your customers' data will be safe and secure.",
+      href: "#",
+      icon: ReceiptRefundIcon },
+    {
+      name: "Followed Artists",
+      description: "List of Artists you have been following",
       href: "#",
       icon: ViewGridIcon,
     },
     {
-      name: "Automations",
-      description: "Build strategic funnels that will drive your customers to convert",
+      name: "Followed Playlists",
+      description: "List of playlists you have been following.",
       href: "#",
-      icon: RefreshIcon,
+      icon: RssIcon,
+    },
+    {
+      name: "Recommended Songs",
+      description: "Recommended songs by our platform based on your like.",
+      href: "#",
+      icon: MusicNoteIcon,
+    },
+    {
+      name: "Downloaded Songs",
+      description: "List of all the songs you have downloaded over time.",
+      href: "#",
+      icon: DownloadIcon,
     },
   ];
 
@@ -59,14 +77,4 @@ export const solutions = [
       icon: CalendarIcon,
     },
     { name: "Security", description: "Understand how we take your privacy seriously.", href: "#", icon: ShieldCheckIcon },
-  ];
-export  const recentPosts = [
-    { id: 1, name: "Boost your conversion rate", href: "#" },
-    { id: 2, name: "How to use search engine optimization to drive traffic to your site", href: "#" },
-    { id: 3, name: "Improve your customer experience", href: "#" },
-  ];
-
-export const callsToAction = [
-    { name: "Watch Demo", href: "#", icon: PlayIcon },
-    { name: "Contact Sales", href: "#", icon: PhoneIcon },
   ];

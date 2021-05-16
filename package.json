@@ -26,6 +26,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint . --fix",
+    "pretty": "prettier src/*.tsx --write",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
