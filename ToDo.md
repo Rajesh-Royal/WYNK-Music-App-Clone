@@ -24,6 +24,7 @@
         - [ ] Downloaded Songs Page.
         - [ ] Podcasts Page.
         - [ ] Downloaded Songs Page.
+- [ ] Setup Routes.
 - [ ] Create Components.
 
     | Home Page  | Other |
