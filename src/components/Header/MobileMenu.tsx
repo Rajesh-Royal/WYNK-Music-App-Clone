@@ -1,8 +1,10 @@
+import React from "react";
 import { Popover } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
-import React from "react";
+import { MoonIcon } from "@heroicons/react/solid";
 import { MyMusic } from "./HeaderData";
 import WynkBlack from "../../assets/icons/Wynk-black.svg";
+import LanguageIcon from "../../assets/icons/languageIcon.svg";
 
 interface Props {}
 
@@ -46,28 +48,30 @@ const MobileMenu = (props: Props) => {
         </div>
       </div>
       <div className="py-6 px-5 space-y-6">
-        <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+        <div className="grid grid-cols-4 gap-y-4 gap-x-8">
+            <a href="#" className="text-base font-medium text-gray-900 hover:text-red-700">
             Home
             </a>
-            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+            <a href="#" className="text-base font-medium text-gray-900 hover:text-red-700">
             Podcast
             </a>
+            <MoonIcon className="text-gray-900 hover:text-red-700 w-5 mx-4"/>
+            <img src={LanguageIcon} alt="language icon" className="w-5"/>
         </div>
         <div>
-          <a href="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700">
-            SignIn
-          </a>
-          <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      On Mobile? Download from {" "}
-                      <a href="#" className="text-red-600 hover:text-red-500">
-                        App Store
-                      </a>
-                      {" "}or{" "}
-                      <a href="#" className="text-red-600 hover:text-red-500">
-                        Play Store
-                      </a>
-                    </p>
+            <a href="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-600 hover:bg-red-700">
+                SignIn
+            </a>
+            <p className="mt-6 text-center text-base font-medium text-gray-500">
+                On Mobile? Download from {" "}
+                <a href="#" className="text-red-600 hover:text-red-500">
+                App Store
+                </a>
+                {" "}or{" "}
+                <a href="#" className="text-red-600 hover:text-red-500">
+                Play Store
+                </a>
+            </p>
         </div>
       </div>
     </div>
