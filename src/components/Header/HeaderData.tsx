@@ -13,7 +13,7 @@ import {
   } from "@heroicons/react/outline";
 import { DownloadIcon, ThumbUpIcon } from "@heroicons/react/solid";
 
-export const solutions = [
+export const MyMusic = [
     {
       name: "My Playlists",
       description: "You will find all your playlists here",

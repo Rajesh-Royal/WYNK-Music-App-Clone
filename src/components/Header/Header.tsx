@@ -1,6 +1,6 @@
 import { Fragment} from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, SearchIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, SearchIcon } from "@heroicons/react/outline";
 import { MoonIcon } from "@heroicons/react/solid";
 import WynkBlack from "../../assets/icons/Wynk-black.svg";
 import WynkWhite from "../../assets/icons/Wynklogo-white.svg";

@@ -2,7 +2,7 @@ import React, { Fragment, MutableRefObject, useRef } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import classNames from "../../utils/ClassNames";
-import { solutions } from "./HeaderData";
+import { MyMusic } from "./HeaderData";
 
 interface Props {
 
@@ -53,7 +53,7 @@ const NavBar = (props: Props) => {
                         >
                           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                              {solutions.map((item) => (
+                              {MyMusic.map((item) => (
                                 <a
                                   key={item.name}
                                   href={item.href}
