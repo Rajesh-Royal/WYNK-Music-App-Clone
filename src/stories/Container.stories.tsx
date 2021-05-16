@@ -7,7 +7,15 @@ export default {
     title: "Container",
     component: Container,
     argTypes: {
-        backgroundColor: { control: "color" }
+        backgroundColor: {
+            control: "color",
+            description: "Set the background color of Container, to see change remove color of child element.",
+            defaultValue: "rgba(0, 0, 0, 0)"
+        },
+        children: {
+            description: "A JSX Element like `<p>Hello</p>`",
+            defaultValue: "None"
+        }
     },
 } as Meta;
 
