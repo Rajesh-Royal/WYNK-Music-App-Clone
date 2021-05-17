@@ -43,3 +43,5 @@
     |  | Featured Artist  |
     |  | Music Player bottom  |
     |  | Current Playing Queue  |
+
+- [x] Create stories of components.
