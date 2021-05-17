@@ -11,6 +11,9 @@
 - [x] Setup react-router-dom.
 - [ ] Setup packages-info docs.
 - [x] Setup tailwind dark mode.
+- [ ] Optimize dark mode files.
+- [x] Add SEO tags.
+    - [ ] Update SEO tags URL's.
 - [ ] Create Pages.
     - [ ] Home Page.
     - [ ] Single Content Pages
