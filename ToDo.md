@@ -10,6 +10,7 @@
 - [x] Setup husky-hooks to lint stagged changes.
 - [x] Setup react-router-dom.
 - [ ] Setup packages-info docs.
+- [ ] Setup CI/CD pipeline.
 - [x] Setup tailwind dark mode.
 - [ ] Optimize dark mode files.
 - [x] Add SEO tags.
