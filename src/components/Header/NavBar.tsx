@@ -5,10 +5,10 @@ import classNames from "../../utils/ClassNames";
 import { MyMusic } from "./HeaderData";
 
 interface Props {
-
+  DarkMode?: boolean
 }
 
-const NavBar = (props: Props) => {
+const NavBar = ({DarkMode}: Props) => {
     const buttonRef = useRef() as MutableRefObject<HTMLButtonElement>;
     const mouseEnter = () => buttonRef?.current.click();
     return (
