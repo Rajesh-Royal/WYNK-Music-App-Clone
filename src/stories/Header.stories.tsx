@@ -1,19 +1,25 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
 
-import Header from "../components/Header/Header";
+import NavBar from "../components/Header/NavBar";
 
 export default {
     title: "Header",
-    component: Header,
-    argTypes: {
-        toggleTheme: {
-            "description": "A function which toggle between dark and white theme",
-        }
-    },
-    toggleTheme: () => true,
+    component: NavBar,
+    decorators: [(Story) => <div style={{ margin: "auto", maxWidth: "600px" }}><Story/></div>],
 } as Meta;
 
-const Template: Story<any> = (args) => <Header />;
+const Template: Story<any> = (args) => <NavBar {...args}/>;
 
-export const Default = Template.bind({});
+export const Navmenu = Template.bind({});
+Navmenu.argTypes = {
+    backgroundColor: {control: "color"},
+};
+Navmenu.args = {
+    DarkMode: true
+};
+if (Navmenu.args.DarkMode) {
+    document.documentElement.classList.add("dark");
+} else {
+    document.documentElement.classList.remove("dark");
+};
