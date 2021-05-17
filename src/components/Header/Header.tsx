@@ -1,4 +1,4 @@
-import { Fragment, useContext} from "react";
+import React, { Fragment, useContext} from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, SearchIcon } from "@heroicons/react/outline";
 import WynkBlack from "../../assets/icons/Wynk-black.svg";
