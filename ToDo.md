@@ -29,10 +29,13 @@
 - [ ] Setup Routes.
 - [ ] Create Components.
 
-    | Home Page  | Other |
+
+    | Home Page  | Global |
     | ------------- | ------------- |
-    | - [ ] Main Hero Slider  | Header |
-    | - [ ] Music list slider| - [ ] Single Music Card |
-    | - [ ] SignIn, SignUp | - [ ] Footer  |
-    | - [ ] Music Player bottom| - [ ] WYNK Download banner  |
-    | - [ ] Current Playing Queue | - [ ] Featured Artist  |
+    | Main Hero Slider  | Header |
+    | Music list slider| Card view of Song. |
+    | SignIn, SignUp | Footer  |
+    |  | WYNK Download banner  |
+    |  | Featured Artist  |
+    |  | Music Player bottom  |
+    |  | Current Playing Queue  |
