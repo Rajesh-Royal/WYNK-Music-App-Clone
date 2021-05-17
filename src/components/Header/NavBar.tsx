@@ -12,7 +12,7 @@ const NavBar = ({DarkMode}: Props) => {
     const buttonRef = useRef() as MutableRefObject<HTMLButtonElement>;
     const mouseEnter = () => buttonRef?.current.click();
     return (
-        <Popover.Group as="nav" className="hidden md:flex space-x-8 items-end">
+        <Popover.Group as="nav" className="hidden md:flex space-x-8 items-end" data-testid="navigation">
               <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-400 transition-all duration-300">
                   HOME
                 </a>
@@ -24,6 +24,7 @@ const NavBar = ({DarkMode}: Props) => {
                           open ? "text-gray-900" : "text-gray-500",
                           "group rounded-md inline-flex items-center text-sm font-medium hover:text-gray-900 focus:outline-none dark:hover:text-gray-400 dark:text-gray-300 transition-all duration-300"
                         )}
+                        data-testid="MyMusic-dropdown"
                         ref={buttonRef}
                         onMouseEnter={mouseEnter}
                       >
@@ -50,6 +51,7 @@ const NavBar = ({DarkMode}: Props) => {
                         <Popover.Panel
                           static
                           className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                          data-testid="my-music-dropdown"
                         >
                           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 dark:bg-gray-850">

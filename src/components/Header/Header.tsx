@@ -23,7 +23,7 @@ export default function Header({toggleTheme}: any) {
               <div className="flex justify-start">
                 <a href="#">
                   <span className="sr-only">Workflow</span>
-                  <img className="h-8 w-44 sm:h-10" src={isDarkMode ? WynkWhite :WynkBlack} alt="" />
+                  <img className="h-8 w-44 sm:h-10" src={isDarkMode ? WynkWhite :WynkBlack} alt="wynk-logo" />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
