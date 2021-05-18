@@ -26,12 +26,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start:dev": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --fix",
-    "pretty": "prettier src/*.tsx --write",
+    "lint:fix": "eslint './src/**/*.{js,jsx,ts}' --fix",
+    "pretty:code": "prettier src/*.tsx --write",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
