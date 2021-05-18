@@ -8,6 +8,7 @@
   "rules": {
     "semi": ["warn", "always"],
     "quotes": ["error", "double"],
+    "react/prop-types": 0,
     "jsx-a11y/anchor-is-valid": [
       "off",
       {

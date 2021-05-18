@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**/*.{js,jsx,ts}",
     "lint:fix": "eslint ./src/**/*.{js,jsx,ts} --fix",
-    "pretty:code": "prettier src/*.tsx --write",
+    "pretty:code": "prettier src/**/*.tsx --write",
     "storybook": "yarn build:storybook-tailwind && start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
