@@ -1,11 +1,18 @@
 {
-  "extends": "react-app",
+  "extends": [
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "semi": ["warn", "always"],
     "quotes": ["error", "double"],
-    "jsx-a11y/anchor-is-valid": [ "off", {
-      "components": [ "Link" ],
-      "specialLink": [ "to" ]
-    }]
+    "jsx-a11y/anchor-is-valid": [
+      "off",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ]
   }
 }
