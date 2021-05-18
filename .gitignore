@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# css changes inside tailwind-storybook.css
+**/tailwind-storybook.css
