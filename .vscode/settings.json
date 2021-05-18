@@ -1,8 +1,23 @@
 {
   "git.ignoreLimitWarning": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "soruce.format": true
-  }
+    "source.fixAll.eslint": true
+  },
+  "html.format.wrapAttributes": "force",
+  "html.format.wrapLineLength": 40,
+  "editor.formatOnSave": false,
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // tell the ESLint plugin to run on save
+  "eslint.validate": ["html", "javascript", "javascriptreact"],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ]
 }
