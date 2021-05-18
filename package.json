@@ -31,7 +31,7 @@
     "build-storybook": "build-storybook -s public",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
     "build:storybook-tailwind": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.storybook.css",
-    "create:css": "cd src/assets/css && type nul > tailwind.storybook.css"
+    "create:css-file": "cd src/assets/css && type nul > tailwind.storybook.css"
   },
   "eslintConfig": {
     "extends": [
