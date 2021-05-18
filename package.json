@@ -27,10 +27,11 @@
     "lint": "eslint './src/**/*.{js,jsx}'",
     "lint:fix": "eslint './src/**/*.{js,jsx,ts}' --fix",
     "pretty:code": "prettier src/*.tsx --write",
-    "storybook": "start-storybook -p 6006 -s public",
+    "storybook": "yarn build:storybook-tailwind && start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
-    "build:storybook-tailwind": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind-storybook.css"
+    "build:storybook-tailwind": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.storybook.css",
+    "create:css": "cd src/assets/css && type nul > tailwind.storybook.css"
   },
   "eslintConfig": {
     "extends": [
