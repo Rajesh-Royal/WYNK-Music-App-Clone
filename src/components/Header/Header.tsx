@@ -7,12 +7,12 @@ import LanguageIcon from "../../assets/icons/languageIcon.svg";
 import LanguageWhiteIcon from "../../assets/icons/languageWhiteIcon.svg";
 import NavBar from "./NavBar";
 import MobileMenu from "./MobileMenu";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../../containers/ThemeProvider";
 import ToggleDarkMode from "./ToggleDarkMode";
 
-export default function Header({ toggleTheme }: any) {
-  const isDarkMode = useContext(ThemeContext);
-
+export default function Header() {
+  const { value: isDarkMode } = useContext(ThemeContext);
+  console.log(isDarkMode);
   return (
     <Popover className="relative bg-white border-t-2 border-red-700 dark:bg-gray-850 shadow-md ">
       {({ open }) => (
@@ -53,7 +53,7 @@ export default function Header({ toggleTheme }: any) {
                   </div>
                 </div>
                 <div className="hidden md:flex items-center ml-4">
-                  <ToggleDarkMode toggleTheme={toggleTheme} />
+                  <ToggleDarkMode />
                   <img
                     src={isDarkMode ? LanguageWhiteIcon : LanguageIcon}
                     alt="language icon"
@@ -80,7 +80,7 @@ export default function Header({ toggleTheme }: any) {
               focus
               static
               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-              <MobileMenu toggleTheme={toggleTheme} />
+              <MobileMenu />
             </Popover.Panel>
           </Transition>
         </>

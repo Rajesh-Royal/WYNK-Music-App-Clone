@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./components/Header/Header";
 import HeaderSeoTagsAndMeta from "./components/Seo/HeaderSeoTagsAndMeta";
-import { isDarkMode } from "./utils/DarkMode";
-
-export const ThemeContext = React.createContext(isDarkMode);
+import ThemeProvider from "./containers/ThemeProvider";
 
 const App = (props: any) => {
-  const [dark, setDark] = useState<boolean>(isDarkMode);
-  const toggleTheme = () => setDark(!dark);
   return (
-    <ThemeContext.Provider value={dark}>
+    <ThemeProvider>
       <main>
-        <HeaderSeoTagsAndMeta />
-        <Header toggleTheme={toggleTheme} />
+        <HeaderSeoTagsAndMeta {...props} />
+        <Header />
       </main>
-    </ThemeContext.Provider>
+    </ThemeProvider>
   );
 };
 

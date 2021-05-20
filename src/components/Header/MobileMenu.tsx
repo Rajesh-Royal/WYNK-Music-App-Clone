@@ -6,16 +6,12 @@ import WynkBlack from "../../assets/icons/Wynk-black.svg";
 import LanguageIcon from "../../assets/icons/languageIcon.svg";
 import WynkWhite from "../../assets/icons/Wynklogo-white.svg";
 import LanguageWhiteIcon from "../../assets/icons/languageWhiteIcon.svg";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../../containers/ThemeProvider";
 import ToggleDarkMode from "./ToggleDarkMode";
 
-interface Props {
-  toggleTheme: any;
-}
-
-const MobileMenu = ({ toggleTheme }: Props) => {
-  const isDarkMode = useContext(ThemeContext);
-
+const MobileMenu = () => {
+  const { value, toggleTheme } = useContext(ThemeContext);
+  const isDarkMode = value;
   return (
     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-black divide-y-2 divide-gray-50">
       <div className="pt-5 pb-6 px-5">
@@ -58,7 +54,7 @@ const MobileMenu = ({ toggleTheme }: Props) => {
             className="text-base font-medium text-gray-900 hover:text-red-700 dark:text-gray-300">
             Podcast
           </a>
-          <ToggleDarkMode toggleTheme={toggleTheme} />
+          <ToggleDarkMode />
           <img
             src={!isDarkMode ? LanguageIcon : LanguageWhiteIcon}
             alt="language icon"
