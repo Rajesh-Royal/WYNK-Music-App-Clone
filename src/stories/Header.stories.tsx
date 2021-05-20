@@ -23,7 +23,7 @@ Navmenu.args = {
   DarkMode: true,
 };
 
-const Template2: Story<any> = (args) => <Header toggleTheme={() => true} />;
+const Template2: Story<any> = (args) => <Header />;
 
 export const MainHeader = Template2.bind({});
 MainHeader.args = {

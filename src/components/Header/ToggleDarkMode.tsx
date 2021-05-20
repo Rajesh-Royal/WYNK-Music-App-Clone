@@ -1,9 +1,10 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement, useContext, useState } from "react";
 import NightMoon from "../../assets/icons/night.svg";
 import DaySun from "../../assets/icons/day.svg";
+import { ThemeContext } from "../../containers/ThemeProvider";
 
-export default function ToggleDarkMode({ toggleTheme }: any): ReactElement {
-  const [dark, setDark] = useState<boolean>(localStorage.WYNK_Theme === "dark");
+export default function ToggleDarkMode(): ReactElement {
+  const { value: isDarkMode, toggleTheme } = useContext(ThemeContext);
 
   if (
     localStorage.WYNK_Theme === "dark" ||
@@ -16,13 +17,12 @@ export default function ToggleDarkMode({ toggleTheme }: any): ReactElement {
 
   return (
     <>
-      {dark ? (
+      {isDarkMode ? (
         <img
           src={DaySun}
           className="w-5 cursor-pointer transition-all duration-500"
           alt="sun icon"
           onClick={() => {
-            setDark(false);
             localStorage.WYNK_Theme = "light";
             toggleTheme();
           }}
@@ -33,7 +33,6 @@ export default function ToggleDarkMode({ toggleTheme }: any): ReactElement {
           className="w-5 cursor-pointer"
           alt="moon icon"
           onClick={() => {
-            setDark(true);
             localStorage.WYNK_Theme = "dark";
             toggleTheme();
           }}
