@@ -15,6 +15,7 @@
 - [x] Setup tailwind dark mode.
 - [ ] Optimize dark mode files.
 - [ ] Add an error boundary.
+- [ ] Use custom hooks for theming.
 - [x] Add SEO tags.
   - [ ] Update SEO tags URL's.
 - [ ] Create Pages.
