@@ -1,7 +1,8 @@
 {
   "git.ignoreLimitWarning": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true
   },
   "html.format.wrapAttributes": "force",
   "html.format.wrapLineLength": 40,
