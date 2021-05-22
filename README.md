@@ -91,3 +91,15 @@ A quick look at the top-level files and directories you'll see in this project.
     ├── ToDo.md
     ├── tsconfig.json
     └── yarn.lock
+
+1. **`.vscode/`**: This directory contains all of the workspace setting for vscode.
+
+2. **`.github/`**: This directory contains ISSUES, feature request, Pull request and workflow templates of this repository.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Rajesh-Royal/WYNK-Music-App-Clone)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Rajesh-Royal/WYNK-Music-App-Clone)
+
+<!-- README-CONTENT:END -->
