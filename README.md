@@ -22,22 +22,71 @@ Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org
 
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with typescript template and using **tailwind.css** as UI library. For Components documentation using **Storybook** and Jest & **@testing-library/react** for unit testing.
 
+**Code formatting:** This project usages `eslint` with `prettier`, you can define you own set of rules in `.eslintrc.json` and `.prettierrc` files.
+
+Your code will be preetify and linted before pushing to repo with **husky-hooks**. This project is using typescript, you may need to install seprate @types library for your need.
+
+I use VSCode editor and having these extension enabled while development of this project.
+
+- [ESLint](https://bit.ly/3v75lsG)
+- [markdownlint](https://bit.ly/3wnW4Na)
+- [ES7/React/Redux snippets](https://bit.ly/3ub5ESb)
+- [Tailwind CSS IntelliSense](https://bit.ly/3wtUgSD)
+
 :warning: You must read the contribution.md file before you actually start contributing to this repo.
 
 ## <p>Available Scripts :helicopter:</p>
 
 This project usages Yarn as package manager and in the project directory, you can run:
 
-| Script | Description |
-|--------|-------------|
-| `start:dev` | Starts the development server|
-| `build` | Production build |
-|  `test` | Runs unit tests |
-|  `eject` | [React Eject](https://create-react-app.dev/docs/available-scripts/#npm-run-eject) |
-| `lint`  | Shows all the linting errors in codebase  |
-| `lint:fix`  | Fix all the liting errors |
-| `pretty:code`  | Preetyfiy your codebase content  |
-| `storybook`  | Starts storybook development & Builds tailwind.css for storybook  |
+| Script             | Description                   |
+|--------------------|-------------------------------|
+| `start:dev`        | Starts the development server |
+| `build`            | Production build              |
+|  `test`            | Runs unit tests               |
+|  `eject`           | [React Eject](https://create-react-app.dev/docs/available-scripts/#npm-run-eject) |
+| `lint`             | Shows all the linting errors in codebase  |
+| `lint:fix`         | Fix all the liting errors |
+| `pretty:code`      | Preetyfiy your codebase content  |
+| `storybook`        | Starts storybook development & Builds tailwind.css for storybook  |
 | `build:storybook`  | Builds the storybook docs  |
 
 :warning: You can ignore rest of the commands.
+
+## 🧐 What's inside?
+
+A quick look at the top-level files and directories you'll see in this project.
+
+    .
+    ├── .github
+    ├── .storybook
+    ├── .vscode
+    ├── node_modules
+    ├── public
+    ├── src
+        ├── assets
+        ├── components
+        ├── containers
+        ├── context
+        ├── pages
+        ├── routes
+        ├── stories
+        ├── utils
+    ├── _redirects
+    ├── .env
+    ├── .eslintrc.json
+    ├── .gitignore
+    ├── .markdownlint.json
+    ├── .prettierignore
+    ├── .prettierrc
+    ├── craco.config.js
+    ├── errors.md
+    ├── LICENSE
+    ├── package.json
+    ├── package.info.md
+    ├── postcss.config.js
+    ├── README.md
+    ├── tailwind.config.js
+    ├── ToDo.md
+    ├── tsconfig.json
+    └── yarn.lock
