@@ -24,8 +24,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/**/*.{js,jsx,ts}",
-    "lint:fix": "eslint ./src/**/*.{js,jsx,ts} --fix",
+    "lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint ./src/**/*.{js,jsx,ts,tsx} --fix",
     "pretty:code": "prettier src/**/*.tsx --write",
     "storybook": "yarn build:storybook-tailwind && start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -99,8 +99,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
-      "eslint ./src/**/*.{js,jsx,ts} --fix"
+      "eslint ./src/**/*.{js,jsx,ts,tsx} --fix"
     ]
   }
 }
