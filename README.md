@@ -6,7 +6,9 @@
 
 ## Getting Started with This Project
 
-This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and using tailwind.css as UI library. For Components documentation using Storybook and Jest & @testing-library/react for unit testing.
+This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with typescript template and using **tailwind.css** as UI library. For Components documentation using **Storybook** and Jest & **@testing-library/react** for unit testing.
+
+:warning: You must read the contribution.md file before you actually start contributing to this repo.
 
 ## Available Scripts :slot_machine
 
