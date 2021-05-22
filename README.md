@@ -26,6 +26,10 @@ This project is bootstrapped with [Create React App](https://github.com/facebook
 
 Your code will be preetify and linted before pushing to repo with **husky-hooks**. This project is using typescript, you may need to install seprate @types library for your need.
 
+Instead of **`react-scripts`** this project usages **[craco](https://bit.ly/2Rvfotf)** to override *Create React App Configurations* without eject.
+
+If your build fails because of postcss [check-this](https://bit.ly/3widWsO).
+
 I use VSCode editor and having these extension enabled while development of this project.
 
 - [ESLint](https://bit.ly/3v75lsG)
