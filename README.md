@@ -79,6 +79,7 @@ A quick look at the top-level files and directories you'll see in this project.
     ├── .markdownlint.json
     ├── .prettierignore
     ├── .prettierrc
+    ├── contribution.md
     ├── craco.config.js
     ├── errors.md
     ├── LICENSE
