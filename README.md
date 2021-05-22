@@ -13,6 +13,7 @@ Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org
 <img alt="dependencies" src="https://img.shields.io/david/Rajesh-Royal/WYNK-Music-App-Clone?logoColor=%2300a538">
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fwynk-clone.netlify.app%2F)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Rajesh-Royal/WYNK-Music-App-Clone)
+![GitHub commits since tagged version](https://img.shields.io/github/commits-since/Rajesh-Royal/WYNK-Music-App-Clone/1.0.0/master?color=green&logoColor=green)
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRajesh-Royal%2FWYNK-Music-App-Clone)
 
 </div>
