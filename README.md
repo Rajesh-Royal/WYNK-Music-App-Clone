@@ -1,48 +1,27 @@
-You should run `build:storybook-tailwind` before starting Storybook development.
+# <p align="center">WYNK Clone :wink:</p>
 
-# Getting Started with Create React App
+<p align="center">Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org/)** and **[tailwind.css](https://tailwindcss.com/)**</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"></p>
 
-## Available Scripts
+## Getting Started with This Project
 
-In the project directory, you can run:
+This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and using tailwind.css as UI library. For Components documentation using Storybook and Jest & @testing-library/react for unit testing.
 
-### `yarn start`
+## Available Scripts :slot_machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project usages Yarn as package manager and in the project directory, you can run:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| Script | Description |
+|--------|-------------|
+| `start:dev` | Starts the development server|
+| `build` | Production build |
+|  `test` | Runs unit tests |
+|  `eject` | [React Eject](https://create-react-app.dev/docs/available-scripts/#npm-run-eject) |
+| `lint`  | Shows all the linting errors in codebase  |
+| `lint:fix`  | Fix all the liting errors |
+| `pretty:code`  | Preetyfiy your codebase content  |
+| `storybook`  | Starts storybook development & Builds tailwind.css for storybook  |
+| `build:storybook`  | Builds the storybook docs  |
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+:warning: You can ignore rest of the commands.
