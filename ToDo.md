@@ -10,12 +10,12 @@
 - [x] Setup Storybook.
 - [x] Setup husky-hooks to lint stagged changes.
 - [x] Setup react-router-dom.
-- [ ] Setup packages-info docs.
+- [x] Setup packages-info docs.
 - [ ] Setup CI/CD pipeline.
 - [x] Setup tailwind dark mode.
-- [ ] Optimize dark mode files.
+- [x] Optimize dark mode files.
 - [ ] Add an error boundary.
-- [ ] Use custom hooks for theming.
+- [x] Use custom hooks for theming.
 - [x] Add SEO tags.
   - [ ] Update SEO tags URL's.
 - [ ] Create Pages.
