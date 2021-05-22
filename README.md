@@ -10,7 +10,7 @@ This project is bootstrapped with [Create React App](https://github.com/facebook
 
 :warning: You must read the contribution.md file before you actually start contributing to this repo.
 
-## <p>Available Scripts :helicopters:</p>
+## <p>Available Scripts :helicopter:</p>
 
 This project usages Yarn as package manager and in the project directory, you can run:
 
