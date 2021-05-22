@@ -10,7 +10,7 @@ This project is bootstrapped with [Create React App](https://github.com/facebook
 
 :warning: You must read the contribution.md file before you actually start contributing to this repo.
 
-## Available Scripts :slot_machine
+## <p>Available Scripts :slot_machine:</p>
 
 This project usages Yarn as package manager and in the project directory, you can run:
 
