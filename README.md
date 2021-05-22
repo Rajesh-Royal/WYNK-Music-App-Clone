@@ -2,7 +2,7 @@
 
 <p align="center">Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org/)** and **[tailwind.css](https://tailwindcss.com/)**</p>
 
-<p align="center"></p>
+<p align="center">[![Netlify Status](https://api.netlify.com/api/v1/badges/9b926b8c-052e-44b0-9331-9d53a8c74b26/deploy-status)](https://app.netlify.com/sites/compassionate-aryabhata-b5ed23/deploys)</p>
 
 ## Getting Started with This Project
 
