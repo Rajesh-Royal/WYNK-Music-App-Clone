@@ -1,6 +1,10 @@
 # <p align="center">WYNK Clone :wink:</p>
 
-<p align="center">Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org/)** and **[tailwind.css](https://tailwindcss.com/)**</p>
+<p align="center">
+
+Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org/)** and **[tailwind.css](https://tailwindcss.com/)**
+
+</p>
 
 <div align="center">
 
