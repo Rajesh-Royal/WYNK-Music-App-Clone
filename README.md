@@ -22,15 +22,17 @@ Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org
 
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with typescript template and using **tailwind.css** as UI library. For Components documentation using **Storybook** and Jest & **@testing-library/react** for unit testing.
 
-**Code formatting:** This project usages `eslint` with `prettier`, you can define you own set of rules in `.eslintrc.json` and `.prettierrc` files.
+**Code formatting:** This project usages `eslint` with `prettier`, you can define you own set of rules in `.eslintrc.json` and `.prettierrc` files. This project is configured to work  eslint with prettier
 
-Your code will be preetify and linted before pushing to repo with **husky-hooks**. This project is using typescript, you may need to install seprate @types library for your need.
+Your code will be preetify and linted before pushing to repo with **husky-hooks**.
+
+This project is using typescript, you may need to install seprate @types library for your need.
 
 Instead of **`react-scripts`** this project usages **[craco](https://bit.ly/2Rvfotf)** to override *Create React App Configurations* without eject.
 
 If your build fails because of postcss [check-this](https://bit.ly/3widWsO).
 
-I use VSCode editor and having these extension enabled while development of this project.
+I use VSCode editor and having these extension enabled while having development of this project.
 
 - [ESLint](https://bit.ly/3v75lsG)
 - [markdownlint](https://bit.ly/3wnW4Na)
