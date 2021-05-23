@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <React.Fragment>
       {banners.map((item) => {
-        return <img src={item.image} alt="" key={item.title} />;
+        return <img src={item.image} alt={item.title} key={item.title} />;
       })}
     </React.Fragment>
   );
