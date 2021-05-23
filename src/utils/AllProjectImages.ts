@@ -18,4 +18,22 @@ function importAll(r: any) {
   return images;
 }
 
+// home banner images
 export const bannersImages = importAll(require.context("../assets/images/top-banner"));
+
+// home hindi hits images
+export const hindiHitsImages = importAll(require.context("../assets/images/hindi-hits"));
+
+// home banner images
+export const indieImages = importAll(require.context("../assets/images/indie"));
+
+// home banner images
+export const internationalHitImages = importAll(
+  require.context("../assets/images/international-hit")
+);
+
+// home banner images
+export const podcastImages = importAll(require.context("../assets/images/podcast"));
+
+// home banner images
+export const topChartsImages = importAll(require.context("../assets/images/top-charts"));
