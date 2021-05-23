@@ -1,3 +1,5 @@
+import { bannersImages } from "../utils/AllProjectImages";
+
 interface bannersType {
   title: string;
   image: string;
@@ -6,42 +8,42 @@ interface bannersType {
 export const banners: bannersType[] = [
   {
     title: "anniversary",
-    image: "../assets/images/top-banner/anniversary.webp",
+    image: bannersImages["anniversary"].default,
   },
   {
     title: "Desi Hip Hop",
-    image: "../assets/images/top-banner/desihiphop.webp",
+    image: bannersImages["desihiphop"].default,
   },
   {
     title: "feel good",
-    image: "../assets/images/top-banner/feelgood.webp",
+    image: bannersImages["feelgood"].default,
   },
   {
     title: "Hip Hop",
-    image: "../assets/images/top-banner/hiphop.webp",
+    image: bannersImages["hiphop"].default,
   },
   {
     title: "Hot right now",
-    image: "../assets/images/top-banner/hotrightnow.webp",
+    image: bannersImages["hotrightnow"].default,
   },
   {
     title: "hottest collaborations",
-    image: "../assets/images/top-banner/hottestcollaborations.webp",
+    image: bannersImages["hottestcollaborations"].default,
   },
   {
     title: "K Pop",
-    image: "../assets/images/top-banner/kpop.webp",
+    image: bannersImages["kpop"].default,
   },
   {
     title: "love stories",
-    image: "../assets/images/top-banner/lovestories.webp",
+    image: bannersImages["lovestories"].default,
   },
   {
     title: "New English",
-    image: "../assets/images/top-banner/newenglish.webp",
+    image: bannersImages["newenglish"].default,
   },
   {
     title: "ummid",
-    image: "../assets/images/top-banner/ummid.webp",
+    image: bannersImages["ummid"].default,
   },
 ];
