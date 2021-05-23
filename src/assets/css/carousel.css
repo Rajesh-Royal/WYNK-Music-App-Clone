@@ -1,0 +1,39 @@
+.BrainhubCarouselItem {
+  padding: 0 1rem;
+  transition: all 1s;
+  height: 200px;
+  max-width: 900px !important;
+  width: 100% !important;
+}
+.BrainhubCarousel__arrowLeft {
+  position: absolute !important;
+  left: 40px;
+  z-index: 50;
+}
+.BrainhubCarousel__arrowRight {
+  position: absolute !important;
+  right: 40px;
+  z-index: 50;
+}
+.home-hero-slider-container .BrainhubCarousel__track {
+    padding: 6rem 0 !important;
+    height: 350px;
+}
+.slider-image {
+    width: 100%;
+}
+
+/* arrow customization */
+.BrainhubCarousel__arrows {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.BrainhubCarousel__arrows:focus {
+   outline: none;
+}
+.BrainhubCarousel__arrows:hover:enabled{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50%;
+    font-size: 1rem;
+}
