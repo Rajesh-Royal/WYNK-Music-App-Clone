@@ -4,6 +4,9 @@ import Header from "./components/Header/Header";
 import HeaderSeoTagsAndMeta from "./components/Seo/HeaderSeoTagsAndMeta";
 import ThemeProvider from "./containers/ThemeProvider";
 
+// slick carousel
+import "@brainhubeu/react-carousel/lib/style.css";
+
 const App = (props: any) => {
   return (
     <ThemeProvider>
