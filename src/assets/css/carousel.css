@@ -1,33 +1,44 @@
-.BrainhubCarouselItem {
-  padding: 0 1rem;
-  transition: all 1s;
-  height: 200px;
-  max-width: 900px !important;
-  width: 100% !important;
+body{
+  overflow-x: hidden;
 }
-.BrainhubCarousel__arrowLeft {
-  position: absolute !important;
-  left: 40px;
-  z-index: 50;
+
+.home-hero-slider-container .slick-track {
+    padding: 1rem 0rem !important;
 }
-.BrainhubCarousel__arrowRight {
-  position: absolute !important;
-  right: 40px;
-  z-index: 50;
+.home-hero-slider-container .slick-slide {
+    padding: 0rem 1rem !important;
 }
-.home-hero-slider-container .BrainhubCarousel__track {
-    padding: 6rem 0 !important;
-    height: 350px;
+.home-hero-slider-container .slick-center {
+    transform: scale(1.02);
+    transition: all ease-in 1s;
+    transition-timing-function: ease-out;
 }
 .slider-image {
-    width: 100%;
+    max-width: 100% !important;
 }
 
 /* arrow customization */
-.BrainhubCarousel__arrows {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-    border-radius: 50%;
-    font-size: 1rem;
+.slick-arrow.slick-prev {
+  position: absolute !important;
+  left: 0px;
+  z-index: 50;
+}
+.slick-arrow.slick-next {
+  position: absolute !important;
+  right: 0px;
+  z-index: 50;
+}
+.slick-arrow{
+    height: 100% !important;
+    border-radius: 0;
+    width: 200px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+}
+.slick-arrow:before{
+  display: none;
 }
 .BrainhubCarousel__arrows:focus {
    outline: none;
@@ -36,4 +47,16 @@
     background-color: rgba(0, 0, 0, 0.5) !important;
     border-radius: 50%;
     font-size: 1rem;
+}
+
+
+@media (max-width: 1200px) {
+  .slick-arrow{
+   display: none !important;
+}
+}
+@media (max-width: 600px){
+  .home-hero-slider-container .slick-slide {
+    padding: 0rem 0.5rem !important;
+  }
 }

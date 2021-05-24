@@ -1,12 +1,9 @@
 import React from "react";
-import Carousel, {
-  slidesToShowPlugin,
-  autoplayPlugin,
-  slidesToScrollPlugin,
-} from "@brainhubeu/react-carousel";
+import Slider from "react-slick";
 import { banners } from "../../data/banners";
 import { fallbackImage } from "../../data/fallbackImage";
 import "../../assets/css/carousel.css";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
 // interface slideType {
 //   bannerData: {
@@ -16,43 +13,73 @@ import "../../assets/css/carousel.css";
 // }
 
 const Banner = () => {
-  const sliderSetting = [
-    "infinite",
-    "arrows",
-    {
-      resolve: slidesToShowPlugin,
-      options: {
-        numberOfSlides: 3,
+  const sliderSettings = {
+    infinite: true,
+    centerMode: true,
+    centerPadding: "300px",
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    lazyLoad: true,
+    nextArrow: (
+      <div>
+        <button className="bg-white dark:bg-black opacity-50 w-10 h-10 rounded-full flex justify-center items-center focus:outline-none">
+          <ChevronRightIcon className="text-black h-5 w-5 dark:text-white" />
+        </button>
+      </div>
+    ),
+    prevArrow: (
+      <div>
+        <button className="bg-white dark:bg-black opacity-50 w-10 h-10 rounded-full flex justify-center items-center focus:outline-none">
+          <ChevronLeftIcon className="text-black h-5 w-5 dark:text-white" />
+        </button>
+      </div>
+    ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: "50px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      resolve: slidesToScrollPlugin,
-      options: {
-        numberOfSlides: 2,
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "50px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      resolve: autoplayPlugin,
-      options: {
-        interval: 5000,
+      {
+        breakpoint: 480,
+        settings: {
+          centerPadding: "15px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-  ];
+    ],
+  };
   return (
     <React.Fragment>
-      <div className="home-hero-slider-container">
-        <Carousel plugins={sliderSetting} animationSpeed={1000}>
+      <div className="home-hero-slider-container my-0 md:my-8">
+        {/* @ts-ignore */}
+        <Slider {...sliderSettings}>
           {banners.map((item) => {
             return (
               <img
                 src={item.image || fallbackImage}
                 alt={item.title}
                 key={item.title}
-                className="w-00 rounded-xl slider-image"
+                className={`w-00 rounded-xl slider-image ${
+                  !item.image ? "animate-pulse dark:bg-gray-850 bg-white shadow-lg " : null
+                }`}
               />
             );
           })}
-        </Carousel>
+        </Slider>
       </div>
     </React.Fragment>
   );
