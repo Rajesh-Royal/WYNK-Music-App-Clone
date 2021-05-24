@@ -79,7 +79,7 @@ export default function Header() {
             <Popover.Panel
               focus
               static
-              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50">
               <MobileMenu />
             </Popover.Panel>
           </Transition>
