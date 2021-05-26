@@ -17,7 +17,7 @@
 - [ ] Add an error boundary.
 - [x] Use custom hooks for theming.
 - [x] Add SEO tags.
-  - [ ] Update SEO tags URL's.
+  - [x] Update SEO tags URL's.
 - [ ] Create Pages.
   - [ ] Home Page.
   - [ ] Single Content Pages
