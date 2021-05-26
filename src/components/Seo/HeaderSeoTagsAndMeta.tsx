@@ -15,7 +15,7 @@ const HeaderSeoTagsAndMeta = (props: Props) => {
         sizes="180x180"
       />
       <meta content="#f5f5f5" name="theme-color" />
-      <link rel="canonical" href="https://wynk.in/music" />
+      <link rel="canonical" href="https://wynk-clone.netlify.app/#" />
       <meta content="INDEX, FOLLOW" name="ROBOTS" />
 
       <title>
@@ -41,15 +41,15 @@ const HeaderSeoTagsAndMeta = (props: Props) => {
         property="og:description"
       />
 
-      <meta content="Wynk Music" property="og:site_name" />
+      <meta content="Wynk Music - clone" property="og:site_name" />
       <meta content="website" property="og:type" />
       <meta content="https://wynk.in/assets/icons/icon-192x192.png" property="og:image" />
-      <meta content="https://wynk.in/music" property="og:url" />
+      <meta content="https://wynk-clone.netlify.app/#" property="og:url" />
       <meta content="summary_large_image" name="twitter:card" />
-      <meta content="https://wynk.in/music" name="twitter:url" />
+      <meta content="https://wynk-clone.netlify.app/#" name="twitter:url" />
       <meta content="@wynkmusic" name="twitter:site" />
       <meta
-        content="Wynk Music - Download MP3 Songs Online, Play Old &amp; New MP3 Music Online Free"
+        content="Wynk Music clone - Download MP3 Songs Online, Play Old &amp; New MP3 Music Online Free"
         name="twitter:title"
       />
       <meta

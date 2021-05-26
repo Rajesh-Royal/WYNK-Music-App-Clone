@@ -7,6 +7,7 @@ import ThemeProvider from "./containers/ThemeProvider";
 // slick carousel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./components/Footer/Footer";
 
 const App = (props: any) => {
   return (
@@ -15,6 +16,7 @@ const App = (props: any) => {
         <HeaderSeoTagsAndMeta {...props} />
         <Header />
         <Banner />
+        <Footer />
       </main>
     </ThemeProvider>
   );
