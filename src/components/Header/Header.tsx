@@ -12,7 +12,6 @@ import ToggleDarkMode from "./ToggleDarkMode";
 
 export default function Header() {
   const { value: isDarkMode } = useContext(ThemeContext);
-  console.log(isDarkMode);
   return (
     <Popover className="relative bg-white border-t-2 border-red-700 dark:bg-gray-850 shadow-md ">
       {({ open }) => (
@@ -35,6 +34,7 @@ export default function Header() {
                   <MenuIcon className="h-6 w-6 dark:text-gray-300" aria-hidden="true" />
                 </Popover.Button>
               </div>
+              {/* main navbar menu */}
               <NavBar />
               {/* Right side search and */}
               <div className="flex justify-around flex-1 hidden xl:flex">
@@ -53,6 +53,7 @@ export default function Header() {
                   </div>
                 </div>
                 <div className="hidden md:flex items-center ml-4">
+                  {/* dark mode toggle component */}
                   <ToggleDarkMode />
                   <img
                     src={isDarkMode ? LanguageWhiteIcon : LanguageIcon}
@@ -80,6 +81,7 @@ export default function Header() {
               focus
               static
               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50">
+              {/* mobile menu */}
               <MobileMenu />
             </Popover.Panel>
           </Transition>
