@@ -7,7 +7,9 @@ interface MenuTypes {}
 const FooterMenu = (props: MenuTypes): JSX.Element => {
   return (
     <React.Fragment>
-      <div className="flex justify-between items-center text-gray-600 dark:text-gray-200 flex-wrap border-t border-gray-700">
+      <div
+        className="flex justify-between items-center text-gray-600 dark:text-gray-200 flex-wrap border-t border-gray-700 footer-menu"
+        data-testid="footer menu">
         <div className="flex justify-center lg:justify-start flex-grow xl:divide-x divide-gray-300 dark:divide-gray-500  text-xs flex-wrap py-5 leading-7 font-semibold md:leading-none">
           <a href="#" className="px-2 hover:text-gray-400">
             ABOUT US

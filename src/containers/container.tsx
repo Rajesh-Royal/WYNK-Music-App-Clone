@@ -6,9 +6,8 @@ export interface ContainerProps {
 }
 
 const Container: React.FC<ContainerProps> = ({ children, backgroundColor }) => {
-  console.log(backgroundColor);
   return (
-    <div className="max-w-7xl mx-auto" style={{ backgroundColor }}>
+    <div className="max-w-7xl mx-auto main-container" style={{ backgroundColor }}>
       {children}
     </div>
   );
