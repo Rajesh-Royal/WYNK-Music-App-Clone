@@ -6,7 +6,7 @@ const FooterLinks = (props: LinksType): JSX.Element => {
   return (
     <React.Fragment>
       <div
-        className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-500 text-xs px-2 py-5 footer-links"
+        className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-400 text-xs px-2 py-5 footer-links"
         data-testid="footer links">
         <div className="link-container">
           <p className="text-base text-gray-600 dark:text-gray-200 font-semibold pb-4">

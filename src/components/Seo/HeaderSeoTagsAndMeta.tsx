@@ -2,9 +2,12 @@ import React from "react";
 import Helmet from "react-helmet";
 import { SiteSeoConfigs } from "../../data/SiteConfigs";
 
-interface Props {}
+interface PropsTypes<T extends object> {
+  title?: string;
+  PageData?: T;
+}
 
-const HeaderSeoTagsAndMeta = (props: Props) => {
+const HeaderSeoTagsAndMeta = (props: PropsTypes<any>) => {
   return (
     <Helmet>
       <meta content="text/html;charset=utf-8" httpEquiv="Content-Type" />
@@ -15,7 +18,7 @@ const HeaderSeoTagsAndMeta = (props: Props) => {
       <link rel="canonical" href={SiteSeoConfigs.canonical} />
       <meta content="INDEX, FOLLOW" name="ROBOTS" />
 
-      <title>{SiteSeoConfigs.title}</title>
+      <title>{props?.title || SiteSeoConfigs.title}</title>
       <meta content={SiteSeoConfigs.title} name="title" />
 
       <meta content={SiteSeoConfigs.description} name="description" />

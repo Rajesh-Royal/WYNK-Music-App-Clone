@@ -21,6 +21,7 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     lazyLoad: true,
+    autoplay: true,
     nextArrow: (
       <div>
         <button className="bg-white dark:bg-black opacity-50 w-10 h-10 rounded-full flex justify-center items-center focus:outline-none">

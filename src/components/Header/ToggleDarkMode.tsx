@@ -1,4 +1,4 @@
-import React, { ReactElement, useContext, useState } from "react";
+import React, { ReactElement, useContext } from "react";
 import NightMoon from "../../assets/icons/night.svg";
 import DaySun from "../../assets/icons/day.svg";
 import { ThemeContext } from "../../containers/ThemeProvider";
