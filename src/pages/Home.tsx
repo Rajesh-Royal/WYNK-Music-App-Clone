@@ -4,11 +4,7 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import HeaderSeoTagsAndMeta from "../components/Seo/HeaderSeoTagsAndMeta";
 
-interface HomeProps {
-  SiteConfig?: string[];
-}
-
-const Home = (props: HomeProps): JSX.Element => {
+const Home = <T extends object>(props: T): JSX.Element => {
   return (
     <React.Fragment>
       <main>

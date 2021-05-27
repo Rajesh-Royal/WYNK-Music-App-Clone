@@ -10,7 +10,7 @@ import { ThemeContext } from "../../containers/ThemeProvider";
 import ToggleDarkMode from "./ToggleDarkMode";
 
 const MobileMenu = () => {
-  const { value, toggleTheme } = useContext(ThemeContext);
+  const { value } = useContext(ThemeContext);
   const isDarkMode = value;
   return (
     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-black divide-y-2 divide-gray-50">
