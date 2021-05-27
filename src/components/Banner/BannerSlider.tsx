@@ -1,9 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import { banners } from "../../data/banners";
 import { fallbackImage } from "../../data/fallbackImage";
-import "../../assets/css/carousel.css";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
 // interface slideType {
 //   bannerData: {
