@@ -49,6 +49,21 @@ body{
     font-size: 1rem;
 }
 
+/* song slider */
+.song-slider .slick-arrow{
+  display: none !important;
+}
+.song-slider:hover .slick-arrow{
+  display: flex !important;
+}
+.song-slider .slick-arrow.slick-prev {
+  left: -100px;
+  top: 40%;
+}
+.song-slider .slick-arrow.slick-next {
+  right: -70px;
+  top: 40%;
+}
 
 @media (max-width: 1200px) {
   .slick-arrow{
