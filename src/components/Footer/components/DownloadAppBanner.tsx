@@ -8,7 +8,9 @@ interface BannerTypes {}
 const DownloadAppBanner = (props: BannerTypes): JSX.Element => {
   return (
     <React.Fragment>
-      <div className="grid md:grid-cols-6 gap-5 grid-cols-4 items-center text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-850 p-5 rounded-sm mx-2 my-10">
+      <div
+        className="grid md:grid-cols-6 gap-5 grid-cols-4 items-center text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-850 p-5 rounded-sm mx-2 my-10 download-app-banner"
+        data-testid="App Download Banner">
         <div className="col-span-4 sm:col-span-2 md:col-span-4 flex items-center">
           <img src={WynkLogo} alt="wynk-footer-logo" className="max-w-sm w-16" />
           <div className="pl-3">
