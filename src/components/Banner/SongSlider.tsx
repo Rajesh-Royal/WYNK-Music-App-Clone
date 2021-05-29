@@ -2,8 +2,8 @@ import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon, ShareIcon } from "@heroicons/react/outline";
 import { PlayIcon } from "@heroicons/react/solid";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
 import Container from "../../containers/container";
+import Lazyload from "react-lazyload";
 
 const SongSlider = (props: any) => {
   const { songData } = props;
@@ -78,11 +78,11 @@ const SongSlider = (props: any) => {
             <Slider {...sliderSettings}>
               {songData?.map((song: any) => {
                 return (
-                  <div key={song.title} className="xs:pr-2 pr-2">
+                  <div key={song.title} className="pr-8">
                     <div className="min-w-song-slide min-h-song-slide relative song-card">
                       {/* <div className="bg-gray-600 min-h-song-slide w-44 rounded-lg animate-pulse flex absolute z-0"></div> */}
                       <img src={song.image} alt="" className="rounded-lg z-10" />
-                      <div className="overlay absolute z-20 w-full h-full align-center justify-center top-0 left-0 bg-gradient-to-tr from-black hidden song-card-overlay duration-300">
+                      <div className="overlay absolute z-20 w-full h-full align-center justify-center top-0 left-0 bg-gradient-to-tr from-black hidden song-card-overlay duration-300 rounded-lg">
                         <div className="flex items-center justify-center">
                           <a href="/single-song">
                             <PlayIcon className="text-red-500 text-md w-12 h-12 bg-white rounded-full p-2 hover:w-14 hover:h-14 duration-300" />

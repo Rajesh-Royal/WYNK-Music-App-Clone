@@ -13,7 +13,6 @@ import { HindiHits } from "../data/hindiHits";
 import YourLibrary from "../components/YourLibrary/YourLibrary";
 
 const Home = <T extends object>(props: T): JSX.Element => {
-  console.log(HindiHits);
   return (
     <React.Fragment>
       <main>
