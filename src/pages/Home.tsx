@@ -10,6 +10,7 @@ import { Podcasts } from "../data/podcasts";
 import { IndieSongs } from "../data/indieSongs";
 import { InternationalHits } from "../data/internationalHits";
 import { HindiHits } from "../data/hindiHits";
+import YourLibrary from "../components/YourLibrary/YourLibrary";
 
 const Home = <T extends object>(props: T): JSX.Element => {
   console.log(HindiHits);
@@ -27,10 +28,10 @@ const Home = <T extends object>(props: T): JSX.Element => {
         {/* indie music */}
         <SongSlider songData={IndieSongs} title="Indie Music" />
         {/* International hits */}
-        <SongSlider songData={InternationalHits} title="International Top Hits" />
+        <SongSlider songData={InternationalHits} title="International Top Hits" slideToShow={7} />
         {/* Hindi Top 50 */}
-        <SongSlider songData={HindiHits} title="Hindi Top 50" />
-
+        <SongSlider songData={HindiHits} title="Hindi Top 50" slideToShow={7} />
+        <YourLibrary />
         <Footer />
       </main>
     </React.Fragment>
