@@ -1,20 +1,20 @@
-body{
+body {
   overflow-x: hidden;
 }
 
 .home-hero-slider-container .slick-track {
-    padding: 1rem 0rem !important;
+  padding: 1rem 0rem !important;
 }
 .home-hero-slider-container .slick-slide {
-    padding: 0rem 1rem !important;
+  padding: 0rem 1rem !important;
 }
 .home-hero-slider-container .slick-center {
-    transform: scale(1.02);
-    transition: all ease-in 1s;
-    transition-timing-function: ease-out;
+  transform: scale(1.02);
+  transition: all ease-in 1s;
+  transition-timing-function: ease-out;
 }
 .slider-image {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* arrow customization */
@@ -28,49 +28,55 @@ body{
   right: 0px;
   z-index: 50;
 }
-.slick-arrow{
-    height: 100% !important;
-    border-radius: 0;
-    width: 200px !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-
+.slick-arrow {
+  height: 100% !important;
+  border-radius: 0;
+  width: 200px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
-.slick-arrow:before{
+.slick-arrow:before {
   display: none;
 }
 .BrainhubCarousel__arrows:focus {
-   outline: none;
+  outline: none;
 }
-.BrainhubCarousel__arrows:hover:enabled{
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    border-radius: 50%;
-    font-size: 1rem;
+.BrainhubCarousel__arrows:hover:enabled {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50%;
+  font-size: 1rem;
 }
 
 /* song slider */
-.song-slider .slick-arrow{
+.song-slider .slick-arrow {
   display: none !important;
+  height: 100% !important;
+  border-radius: 0;
+  width: auto !important;
 }
-.song-slider:hover .slick-arrow{
+.song-slider:hover .slick-arrow {
   display: flex !important;
 }
 .song-slider .slick-arrow.slick-prev {
-  left: -100px;
-  top: 40%;
+  left: -20px;
+  top: 35%;
 }
 .song-slider .slick-arrow.slick-next {
-  right: -70px;
-  top: 40%;
+  right: 0px;
+  top: 35%;
+}
+
+.song-card:hover .song-card-overlay {
+  display: flex;
 }
 
 @media (max-width: 1200px) {
-  .slick-arrow{
-   display: none !important;
+  .slick-arrow {
+    display: none !important;
+  }
 }
-}
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .home-hero-slider-container .slick-slide {
     padding: 0rem 0.5rem !important;
   }

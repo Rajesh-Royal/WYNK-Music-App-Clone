@@ -1,6 +1,8 @@
 import React from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
+import { ChevronLeftIcon, ChevronRightIcon, ShareIcon } from "@heroicons/react/outline";
+import { PlayIcon } from "@heroicons/react/solid";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import Container from "../../containers/container";
 
 const SongSlider = (props: any) => {
@@ -8,7 +10,7 @@ const SongSlider = (props: any) => {
   const sliderSettings = {
     infinite: true,
     speed: 1000,
-    slidesToShow: 6,
+    slidesToShow: props?.slideToShow || 6,
     slidesToScroll: 5,
     nextArrow: (
       <div>
@@ -77,10 +79,20 @@ const SongSlider = (props: any) => {
               {songData?.map((song: any) => {
                 return (
                   <div key={song.title} className="xs:pr-2 pr-2">
-                    <img src={song.image} alt="" className="rounded-lg" />
-                    <p className="text-base mt-3">{song.title.substring(0, 23)}</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">
-                      {song.description?.substring(0, 30)}
+                    <div className="min-w-song-slide min-h-song-slide relative song-card">
+                      {/* <div className="bg-gray-600 min-h-song-slide w-44 rounded-lg animate-pulse flex absolute z-0"></div> */}
+                      <img src={song.image} alt="" className="rounded-lg z-10" />
+                      <div className="overlay absolute z-20 w-full h-full align-center justify-center top-0 left-0 bg-gradient-to-tr from-black hidden song-card-overlay duration-300">
+                        <div className="flex items-center justify-center">
+                          <a href="/single-song">
+                            <PlayIcon className="text-red-500 text-md w-12 h-12 bg-white rounded-full p-2 hover:w-14 hover:h-14 duration-300" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-base mt-3 truncate pr-2 md:pr-4">{song.title}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 pr-2 md:pr-4 truncate">
+                      {song.description}
                     </p>
                   </div>
                 );
