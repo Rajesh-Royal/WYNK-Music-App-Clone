@@ -48,3 +48,4 @@
 
 - [x] Create stories of components.
 - [ ] update app to be multilinugal.
+- [ ] Show loaders when site is loading
