@@ -1,9 +1,8 @@
-import React from "react";
-import { ChevronLeftIcon, ChevronRightIcon, ShareIcon } from "@heroicons/react/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import { PlayIcon } from "@heroicons/react/solid";
+import React from "react";
 import Slider from "react-slick";
 import Container from "../../containers/container";
-import Lazyload from "react-lazyload";
 
 const SongSlider = (props: any) => {
   const { songData } = props;
