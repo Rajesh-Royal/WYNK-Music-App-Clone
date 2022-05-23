@@ -8,7 +8,7 @@ Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org
 
 <div align="center">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b926b8c-052e-44b0-9331-9d53a8c74b26/deploy-status)](https://app.netlify.com/sites/compassionate-aryabhata-b5ed23/deploys)
+![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=wynk-clone)
 <img alt="license" src="https://img.shields.io/badge/license-MIT-green">
 <img alt="dependencies" src="https://img.shields.io/david/Rajesh-Royal/WYNK-Music-App-Clone?color=green&logoColor=%2300a538">
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fwynk-clone.netlify.app%2F)
@@ -17,6 +17,11 @@ Frontend Clone of WYNK music streaming APP using **[ReactJS](https://reactjs.org
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRajesh-Royal%2FWYNK-Music-App-Clone)
 
 </div>
+
+<!-- ![wynk-clone-demo](https://user-images.githubusercontent.com/24524924/169729910-1fef9c22-52a3-4586-8876-913e1a9c9c60.gif) -->
+
+
+<p align="center"><a href="https://github.com/Rajesh-Royal/WYNK-Music-App-Clone"><img src="https://user-images.githubusercontent.com/24524924/169729910-1fef9c22-52a3-4586-8876-913e1a9c9c60.gif" width="100%"/></a><a href="#"><img src="http://randojs.com/images/dropShadow.png" width="100%"/></a></p><br/>
 
 ## Getting Started with This Project
 
