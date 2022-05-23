@@ -13,7 +13,7 @@ const FooterCopyright = (props: CopyrightTypes): JSX.Element => {
           Play your favourite music online for free or download mp3. Enjoy from over 60 Lakh Hindi,
           English, Bollywood, Regional, Latest, Old songs and more.
         </p>
-        <p className="py-5">2021 © All rights reserved | Airtel Digital Limited</p>
+        <p className="py-5">2021 © All rights reserved | WYNK UI clone app</p>
       </div>
     </React.Fragment>
   );
