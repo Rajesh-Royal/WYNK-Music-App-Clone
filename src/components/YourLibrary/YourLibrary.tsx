@@ -1,10 +1,9 @@
 import React from "react";
-import Container from "../../containers/container";
-import YourPlaylist from "../../assets/images/your-library/your-playlists.webp";
-import RecentlyPlayed from "../../assets/images/your-library/recently-played.webp";
-import LikedSongs from "../../assets/images/your-library/liked-songs.webp";
 import Downloads from "../../assets/images/your-library/downloads.webp";
-import { PlayIcon } from "@heroicons/react/solid";
+import LikedSongs from "../../assets/images/your-library/liked-songs.webp";
+import RecentlyPlayed from "../../assets/images/your-library/recently-played.webp";
+import YourPlaylist from "../../assets/images/your-library/your-playlists.webp";
+import Container from "../../containers/container";
 import PlayIconWithOverlay from "../../containers/PlayIconWithOverlay";
 
 const YourLibrary = () => {
