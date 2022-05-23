@@ -17,7 +17,8 @@ export const SiteSeoConfigs: SiteSeoConfigsType = {
   icon: "https://wynk.in/assets/favicon-wht.ico",
   AppleIcon: "https://wynk.in/assets/icons/icon-192x192.png",
   opengraphImage: "https://wynk.in/assets/icons/icon-192x192.png",
-  title: "Clone - Listen &amp; Download Latest MP3 Hindi, English, Bollywood Songs Online | Wynk Music",
+  title:
+    "Clone - Listen &amp; Download Latest MP3 Hindi, English, Bollywood Songs Online | Wynk Music",
   description:
     "Clone - Wynk Music - Download &amp; Listen mp3 songs, music online for free. Enjoy from over 30 Lakh Hindi, English, Bollywood, Regional, Latest, Old songs and more. Create and Listen to your playlist, like and share your favorite music on the Wynk Music app.",
   canonical: "/",
